@@ -58,7 +58,7 @@ public class Zombie : MonoBehaviour
 
     private void WalkingUpdate()
     {
-        float randomSpeed = Random.Range(-0.1f, 0.5f) + moveSpeed;
+        float randomSpeed = Random.Range(-0.1f, 0.3f) + moveSpeed;
         rb.MovePosition(rb.position + randomSpeed * Time.deltaTime * Vector2.left);
     }
 

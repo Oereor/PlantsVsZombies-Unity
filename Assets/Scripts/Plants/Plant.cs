@@ -16,9 +16,9 @@ public class Plant : MonoBehaviour
 
     public PlantType plantType;
 
-    [SerializeField] private int plantHealth;
+    [SerializeField] protected int plantHealth;
 
-    [SerializeField] private int maxHealth;
+    [SerializeField] protected int maxHealth;
 
     [SerializeField] protected int sunPaybackQuantity;
 
@@ -37,6 +37,7 @@ public class Plant : MonoBehaviour
     private void Start()
     {
         SwitchToDisabled();
+        plantHealth = maxHealth;
     }
 
     private void Update()
@@ -63,7 +64,7 @@ public class Plant : MonoBehaviour
         {
             GetComponent<Animator>().enabled = false;
         }
-
+        
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
         {
@@ -97,9 +98,14 @@ public class Plant : MonoBehaviour
 
     void DisabledUpdate()
     {
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null && collider.enabled)
+        {
+            collider.enabled = false;
+        }
     }
 
-    public void Heal(int healAmount)
+    public virtual void Heal(int healAmount)
     {
         plantHealth += healAmount;
         if (plantHealth > maxHealth)
@@ -110,10 +116,13 @@ public class Plant : MonoBehaviour
 
     public void FullHeal()
     {
-        plantHealth = maxHealth;
+        if (plantHealth < maxHealth)
+        {
+            Heal(maxHealth - plantHealth);
+        }
     }
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         plantHealth -= damage;
         if (plantHealth <= 0)
@@ -137,7 +146,7 @@ public class Plant : MonoBehaviour
 
     public virtual void Boost()
     {
-
+        return;
     }
 
     protected void BoostComplete()
@@ -145,6 +154,11 @@ public class Plant : MonoBehaviour
         hasBoosted = true;
         FullHeal();
         OnBoostCompleted?.Invoke();
+    }
+
+    protected float GetHealthPercentage()
+    {
+        return (float)plantHealth / maxHealth;
     }
 
     public event UnityAction OnPlanted;
