@@ -24,7 +24,7 @@ The classic plant that produces sun for you.
 - Max health: 100
 - Sun payback on shoveled: 25
 - Sun production interval: 12 seconds
-- Boost effect: Immediately produce 125 sun value; reduce production interval to 9 seconds since boosted
+- Boost effect: *Immediately produce 125 sun value; reduce production interval to 9 seconds since boosted*
 
 ### 2. Jalapeno
 
@@ -35,7 +35,7 @@ Burns a whole row of zombies. Always reliable if a huge wave of zombies appear!
 - Max health: 2147483647 (all single-use plants are invicible when exploding, of course)
 - Sun payback on shoveled: 0
 - Damage: Burn zombies on the same row to die
-- Boost effect: Burn 3 adjacent rows of zombies instead of 1 row
+- Boost effect: *Burn 3 adjacent rows of zombies instead of 1 row*
 
 ### 3. Cherry Bomb
 
@@ -46,7 +46,7 @@ The best companion of Jalapeno!
 - Max health: 2147483647
 - Sun payback on shoveled: 0
 - Damage: Effective within a 3x3 square (approximately; the actual range is a circle)
-- Boost effect: 1.5x Explosion radius (expand to about 5x5 square; basically a doom-shroom which does no harm to your lawn!)
+- Boost effect: *1.5x Explosion radius (expand to about 5x5 square; basically a doom-shroom which does no harm to your lawn!)*
 
 ### 4. Potato Mine
 
@@ -58,7 +58,7 @@ They are really cheap!
 - Max health: 100 ...when not active; when active, why care about its health?
 - Sun payback on shoveled: 0
 - Damage: Effective within 3 cells (1 left and 1 right)
-- Boost effect: 1.2x Eexplosion radius and damages zombies on adjacent rows
+- Boost effect: *1.2x Eexplosion radius and damages zombies on adjacent rows*
 
 ### 5. Wallnut
 
@@ -68,7 +68,7 @@ The classic defender. Works best with a potato mine behind it!
 - Cooldown time: 12 seconds
 - Max health: 1500
 - Sun payback on shoveled: 25
-- Boost effect: 2x Max health and immediately restore to full health (namely, 3000)
+- Boost effect: *2x Max health and immediately restore to full health (namely, 3000)*
 - Switch to damage stage 1 when health percentage is below 65%, and damage stage 2 when below 30%
 
 ## Zombies
