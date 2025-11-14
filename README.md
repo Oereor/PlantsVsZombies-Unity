@@ -34,7 +34,7 @@ Burns a whole row of zombies. Always reliable if a huge wave of zombies appear!
 - Cooldown time: 8 seconds
 - Max health: 2147483647 (all single-use plants are invicible when exploding, of course)
 - Sun payback on shoveled: 0
-- Damage: Burn zombies on the same row to die
+- Damage: Burn zombies on the same row
 - Boost effect: *Burn 3 adjacent rows of zombies instead of 1 row*
 
 ### 3. Cherry Bomb
@@ -79,4 +79,6 @@ There is only one thing to mention: **they attack at the rate of 25 damage per s
 
 - Where is the Peashooter? It will come after the Health system of zombies.
 
-- And the zombie Health system? Well, I'm working on the animations of zombies losing head and dying. That's part of this. 
+- And the zombie Health system? Well, I'm working on the animations of zombies losing head and dying. That's part of this.
+
+- More game contents, such as level progress and level selector, as well as more kinds of zombies, will... Well, I don't know when they can be published. 
