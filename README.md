@@ -58,7 +58,7 @@ They are really cheap!
 - Max health: 100 ...when not active; when active, why care about its health?
 - Sun payback on shoveled: 0
 - Damage: Effective within 3 cells (1 left and 1 right)
-- Boost effect: *1.2x Eexplosion radius and damages zombies on adjacent rows*
+- Boost effect: *1.2x Explosion radius and damages zombies on adjacent rows*
 
 ### 5. Wallnut
 
@@ -73,4 +73,4 @@ The classic defender. Works best with a potato mine behind it!
 
 ## Zombies
 
-There is only one thing to mention: they attack at the rate of 25 damage per second. 
+There is only one thing to mention: **they attack at the rate of 25 damage per second.**
