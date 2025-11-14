@@ -14,7 +14,7 @@ public class Plant : MonoBehaviour
 {
     protected PlantState currentState = PlantState.Disabled;
 
-    public PlantType plantType;
+    [SerializeField] protected PlantType plantType;
 
     [SerializeField] protected int plantHealth;
 
@@ -138,10 +138,15 @@ public class Plant : MonoBehaviour
         Destruct();
     }
 
-    protected void Destruct()
+    public void Destruct()
     {
         OnDestructed?.Invoke();
         Destroy(gameObject);
+    }
+
+    public PlantType GetPlantType()
+    {
+        return plantType;
     }
 
     public virtual void Boost()

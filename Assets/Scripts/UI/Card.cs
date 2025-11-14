@@ -115,7 +115,7 @@ public class Card : MonoBehaviour
     {
         if (sunCost > SunManager.Instance.SunAmount) return;
 
-        Plant newPlant = HandManager.Instance.GrabPlant(plantType);
+        Plant newPlant = HandManager.Instance.GrabOrReturnPlant(plantType);
         if (newPlant != null)
         {
             newPlant.OnPlanted += OnPlantSuccess;

@@ -40,9 +40,17 @@ public class HandManager : MonoBehaviour
     }
 
     // returns the grabbed plant
-    public Plant GrabPlant(PlantType plantType)
+    public Plant GrabOrReturnPlant(PlantType plantType)
     {
-        if (currentPlantInHand != null) return null;
+        if (currentPlantInHand != null)
+        {
+            if (currentPlantInHand.GetPlantType() == plantType)
+            {
+                currentPlantInHand.Destruct();
+                currentPlantInHand = null;
+            }
+            return null;
+        }
 
         Plant plantPrefab = GetPlantPrefab(plantType);
         if (plantPrefab == null)
@@ -83,7 +91,7 @@ public class HandManager : MonoBehaviour
     {
         foreach (Plant plant in plantPrefabs)
         {
-            if (plant.plantType == plantType)
+            if (plant.GetPlantType() == plantType)
             {
                 return plant;
             }
