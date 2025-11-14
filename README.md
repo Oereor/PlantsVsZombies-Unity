@@ -74,3 +74,9 @@ The classic defender. Works best with a potato mine behind it!
 ## Zombies
 
 There is only one thing to mention: **they attack at the rate of 25 damage per second.**
+
+## Coming Soon...
+
+- Where is the Peashooter? It will come after the Health system of zombies.
+
+- And the zombie Health system? Well, I'm working on the animations of zombies losing head and dying. That's part of this. 
