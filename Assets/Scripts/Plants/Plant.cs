@@ -62,7 +62,7 @@ public class Plant : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         if (animator != null)
         {
-            GetComponent<Animator>().enabled = false;
+            animator.enabled = false;
         }
         
         Collider2D collider = GetComponent<Collider2D>();
@@ -79,7 +79,7 @@ public class Plant : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         if (animator != null)
         {
-            GetComponent<Animator>().enabled = true;
+            animator.enabled = true;
         }
 
         Collider2D collider = GetComponent<Collider2D>();
@@ -91,9 +91,15 @@ public class Plant : MonoBehaviour
         OnPlanted?.Invoke();
     }
 
+    /// <summary>
+    /// Performs an update operation for a planted entity. Derived classes can override this method to implement custom
+    /// update logic.
+    /// </summary>
+    /// <remarks>This method is called during the update cycle for planted entities. The base implementation
+    /// does not perform any actions.</remarks>
     protected virtual void PlantedUpdate()
     {
-
+        return;
     }
 
     void DisabledUpdate()
@@ -149,6 +155,12 @@ public class Plant : MonoBehaviour
         return plantType;
     }
 
+    /// <summary>
+    /// Performs a boost operation on the current instance. The specific effect of boosting depends on the derived class
+    /// implementation.
+    /// </summary>
+    /// <remarks>Override this method in a derived class to provide custom boost behavior. The base
+    /// implementation does not perform any action.</remarks>
     public virtual void Boost()
     {
         return;
