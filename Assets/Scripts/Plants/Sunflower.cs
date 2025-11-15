@@ -12,8 +12,8 @@ public class Sunflower : Plant
 
     public GameObject sunPrefab;
 
-    private float minHorizontalOffset = 0.3f;
-    private float maxHorizontalOffset = 1.3f;
+    private readonly float minHorizontalOffset = 0.3f;
+    private readonly float maxHorizontalOffset = 1.3f;
 
     private void Awake()
     {

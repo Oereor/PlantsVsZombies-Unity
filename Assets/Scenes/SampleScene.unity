@@ -1674,7 +1674,7 @@ MonoBehaviour:
   - {fileID: 105585564249549492, guid: 3986dfca309e21840809dc0a3fc68c82, type: 3}
   - {fileID: 6183306421987685560, guid: b217a2e99e15eac45bd2ab26410fd215, type: 3}
   shovelPrefab: {fileID: 2234320584319818554, guid: bed87c01348db4649a53f291e4d0ea54, type: 3}
-  boostSunPrefeb: {fileID: 3085045136265467606, guid: e4562acc57eb4c846a30038dcc903531, type: 3}
+  boostSunPrefab: {fileID: 3085045136265467606, guid: e4562acc57eb4c846a30038dcc903531, type: 3}
 --- !u!114 &477047528
 MonoBehaviour:
   m_ObjectHideFlags: 0

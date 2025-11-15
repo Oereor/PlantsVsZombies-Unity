@@ -126,7 +126,16 @@ public class Zombie : MonoBehaviour
 
     public void OnZombieBooming()
     {
+        RandomlyDropSun();
         SwitchToDead();
+    }
+
+    private void RandomlyDropSun()
+    {
+        if (Random.Range(0, 100) < 10) // 10% chance to drop sun
+        {
+            SunManager.Instance.ProduceSunAt(transform.position);
+        }
     }
 
     public void BoomDie()
