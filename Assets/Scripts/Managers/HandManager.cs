@@ -6,7 +6,7 @@ public class HandManager : MonoBehaviour
 {
     public static HandManager Instance { get; private set; }
 
-    public List<Plant> plantPrefabs;
+    public Plant[] plantPrefabs;
 
     public Shovel shovelPrefab;
 
@@ -40,7 +40,7 @@ public class HandManager : MonoBehaviour
     }
 
     // returns the grabbed plant
-    public Plant GrabOrReturnPlant(PlantType plantType)
+    public Plant GrabOrDisposePlant(PlantType plantType)
     {
         if (currentPlantInHand != null)
         {
