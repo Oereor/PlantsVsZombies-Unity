@@ -10,7 +10,7 @@ public class HandManager : MonoBehaviour
 
     public Shovel shovelPrefab;
 
-    public BoostSun boostSunPrefeb;
+    public BoostSun boostSunPrefab;
 
     private Plant currentPlantInHand;
 
@@ -84,7 +84,7 @@ public class HandManager : MonoBehaviour
             return;
         }
 
-        boostSunInHand = Instantiate(boostSunPrefeb);
+        boostSunInHand = Instantiate(boostSunPrefab);
     }
 
     private Plant GetPlantPrefab(PlantType plantType)
