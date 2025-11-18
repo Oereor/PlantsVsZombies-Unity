@@ -73,12 +73,15 @@ The classic defender. Works best with a potato mine behind it!
 
 ## Zombies
 
-There is only one thing to mention: **they attack at the rate of 25 damage per second.**
+Currently there is only *one* kind of zombie: the most ordinary **ordinary zombie.** Here are some basic info. 
+
+- Max health: 100
+- Attack: 25 damage per second
+- Move speed: *ORDINARY* (I don't know how to describe this; to be technical, they move at a random speed of 0.9-1.3 units per second. This can be changed at any time.)
+- Are they resistent to any single-use plant? **NO.**
 
 ## Coming Soon...
 
-- Where is the Peashooter? It will come after the Health system of zombies.
+- Where is the Peashooter? It will come after the Health system of zombies, which is currently under construction.
 
-- And the zombie Health system? Well, I'm working on the animations of zombies losing head and dying. That's part of this.
-
-- More game contents, such as level progress and level selector, as well as more kinds of zombies, will... Well, I don't know when they can be published. 
+- More game contents, such as level progress and level selector, as well as more kinds of zombies, will... Well, I don't know when they can be published. Maybe after a long time. 
