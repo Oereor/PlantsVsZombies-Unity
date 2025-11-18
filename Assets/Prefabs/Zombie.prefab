@@ -124,6 +124,7 @@ MonoBehaviour:
   moveSpeed: 1
   attackDamage: 5
   attackInterval: 0.2
+  maxHealth: 100
 --- !u!61 &186706229377148583
 BoxCollider2D:
   m_ObjectHideFlags: 0

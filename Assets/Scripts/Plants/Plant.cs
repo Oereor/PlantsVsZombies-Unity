@@ -16,9 +16,9 @@ public class Plant : MonoBehaviour
 
     [SerializeField] protected PlantType plantType;
 
-    [SerializeField] protected int plantHealth;
+    [SerializeField] protected float plantHealth;
 
-    [SerializeField] protected int maxHealth;
+    [SerializeField] protected float maxHealth;
 
     [SerializeField] protected int sunPaybackQuantity;
 
@@ -111,7 +111,7 @@ public class Plant : MonoBehaviour
         }
     }
 
-    public virtual void Heal(int healAmount)
+    public virtual void Heal(float healAmount)
     {
         plantHealth += healAmount;
         if (plantHealth > maxHealth)
@@ -128,7 +128,7 @@ public class Plant : MonoBehaviour
         }
     }
 
-    public virtual void TakeDamage(int damage)
+    public virtual void TakeDamage(float damage)
     {
         plantHealth -= damage;
         if (plantHealth <= 0)
@@ -175,7 +175,7 @@ public class Plant : MonoBehaviour
 
     protected float GetHealthPercentage()
     {
-        return (float)plantHealth / maxHealth;
+        return plantHealth / maxHealth;
     }
 
     public event UnityAction OnPlanted;

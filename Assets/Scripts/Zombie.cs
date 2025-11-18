@@ -13,10 +13,12 @@ enum ZombieState
 
 public class Zombie : MonoBehaviour
 {
+    private const string m_HealthPercentageParameterName = "HealthPercentage";
+
     private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed;
-    [SerializeField] private int attackDamage;
+    [SerializeField] private float attackDamage;
     [SerializeField] private float attackInterval;
     private float attackTimer = 0;
 
@@ -26,11 +28,19 @@ public class Zombie : MonoBehaviour
 
     private Plant currentTargetPlant = null;
 
+    private float health;
+    [SerializeField] private float maxHealth;
+
     private int rowIndex;
     public int RowIndex
     {
         get { return rowIndex; }
         set { rowIndex = value; }
+    }
+
+    private void Awake()
+    {
+        health = maxHealth;
     }
 
     private void Start()
@@ -116,12 +126,22 @@ public class Zombie : MonoBehaviour
     {
         currentZombieState = ZombieState.Dead;
         rb.velocity = Vector2.zero;
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
         OnZombieDie?.Invoke(this);
     }
 
     public void OnZombieBoomDead()
     {
         Destroy(gameObject, 0.5f);
+    }
+
+    public void OnZombieLostHeadDead()
+    {
+        Destroy(gameObject, 0.25f);
     }
 
     public void OnZombieBooming()
@@ -141,6 +161,22 @@ public class Zombie : MonoBehaviour
     public void BoomDie()
     {
         animator.SetTrigger("HasBoomed");
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        UpdateHealthPercentage();
+        if (health <= 0 && currentZombieState != ZombieState.Dead)
+        {
+            SwitchToDead();
+        }
+    }
+
+    private void UpdateHealthPercentage()
+    {
+        float healthPercentage = health / maxHealth;
+        animator.SetFloat(m_HealthPercentageParameterName, healthPercentage);
     }
 
     public event UnityAction<Zombie> OnZombieDie;

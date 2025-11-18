@@ -18,13 +18,13 @@ public class Wallnut : Plant
         animator.SetFloat(m_HealthPercentageParameterString, 1f);
     }
 
-    public override void TakeDamage(int damage)
+    public override void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
         animator.SetFloat(m_HealthPercentageParameterString, GetHealthPercentage());
     }
 
-    public override void Heal(int healAmount)
+    public override void Heal(float healAmount)
     {
         base.Heal(healAmount);
         animator.SetFloat(m_HealthPercentageParameterString, GetHealthPercentage());
