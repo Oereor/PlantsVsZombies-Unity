@@ -17,7 +17,8 @@ public enum PlantType
     PotatoMine,
     IceShroom,
     Wallnut,
-    Sunflower
+    Sunflower,
+    PeaShooter
 }
 
 public class Card : MonoBehaviour

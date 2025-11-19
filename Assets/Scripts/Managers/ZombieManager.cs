@@ -87,4 +87,16 @@ public class ZombieManager : MonoBehaviour
             activeZombies.Remove(deadZombie);
         }
     }
+
+    public bool ExistZombiesInRow(int rowIndex)
+    {
+        foreach (Zombie zombie in activeZombies)
+        {
+            if (zombie.RowIndex == rowIndex)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
