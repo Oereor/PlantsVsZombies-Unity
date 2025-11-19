@@ -77,6 +77,18 @@ The classic defender. Works best with a potato mine behind it!
 - Boost effect: *2x Max health and immediately restore to full health (namely, 3000)*
 - Switch to damage stage 1 when health percentage is below 65%, and damage stage 2 when below 30%
 
+### 6. Peashooter
+
+The most classic attacker. Now equipped with boost ability!
+
+- Sun cost: 100
+- Cooldown Time: 6 seconds
+- Max health: 100
+- Sun payback on shoveled: 50
+- Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
+- Damage: Still working on it... But of course **10 peas will kill an ordinary zombie**
+- Boost effect: *Immediately shoot 40 peas; shoot interval shortened to 1.2 seconds; shoot 2 peas at a time from then on*
+
 ## Zombies
 
 Currently there is only *one* kind of zombie: the most ordinary **ordinary zombie.** Here are some basic info. 
@@ -88,6 +100,6 @@ Currently there is only *one* kind of zombie: the most ordinary **ordinary zombi
 
 ## Coming Soon...
 
-- Where is the Peashooter? It will come after the Health system of zombies, which is currently under construction.
+- The peashooter has come. Working on zombie health system. 
 
 - More game contents, such as level progress and level selector, as well as more kinds of zombies, will... Well, I don't know when they can be published. Maybe after a long time. 
