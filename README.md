@@ -3,7 +3,7 @@ A Unity version of PvZ. Still working on it!
 
 *Unity version: 2022.3*
 
-Here are some things I've already implemented. Currently there are 5 plants to use, as well as some unique features (inspired by PvZ 2). 
+Here are some things I've already implemented. Currently there are 6 plants to use, as well as some unique features (part of which are inspired by PvZ 2). 
 
 ## Unique Features
 
