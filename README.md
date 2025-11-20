@@ -86,8 +86,8 @@ The most classic attacker. Now equipped with boost ability!
 - Max health: 100
 - Sun payback on shoveled: 50
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
-- Damage: Still working on it... But of course **10 peas will kill an ordinary zombie**
-- Boost effect: *Immediately shoot 40 peas; shoot interval shortened to 1.2 seconds; shoot 2 peas at a time from then on*
+- Damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
+- Boost effect: *Immediately shoot 40 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.2x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on*
 
 ## Zombies
 
