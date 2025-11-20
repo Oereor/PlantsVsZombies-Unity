@@ -5,7 +5,7 @@ using UnityEngine;
 public class PeaShooter : Plant
 {
     private static readonly WaitForSeconds m_waitForSeconds0_1 = new WaitForSeconds(0.1f);
-    
+
     [SerializeField] private float shootInterval;
     private float shootTimer = 0;
 
@@ -13,7 +13,9 @@ public class PeaShooter : Plant
 
     [SerializeField] private PeaBullet peaBulletPrefab;
 
-    private readonly float bulletSpeed = 5f;
+    [SerializeField] private float bulletSpeed = 5f;
+
+    [SerializeField] private float bulletDamage = 10f;
 
     private int singleShotQuantity = 1;
 
@@ -37,6 +39,8 @@ public class PeaShooter : Plant
         StartCoroutine(Shoot(bulletQuantity: 40));
         singleShotQuantity *= 2;
         shootInterval *= 0.8f;
+        bulletDamage *= 1.2f;
+        bulletSpeed *= 1.5f;
         BoostComplete();
     }
 
@@ -46,6 +50,7 @@ public class PeaShooter : Plant
         {
             PeaBullet peaBullet = Instantiate(peaBulletPrefab, peaSpawnPoint.position, Quaternion.identity);
             peaBullet.SetSpeed(bulletSpeed);
+            peaBullet.SetDamage(bulletDamage);
 
             yield return m_waitForSeconds0_1;
         }

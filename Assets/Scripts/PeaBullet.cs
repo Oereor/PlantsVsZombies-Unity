@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class PeaBullet : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    private float speed;
+    private float damage;
+
+    [SerializeField] private GameObject peaBulletHitPrefab;
 
     public void SetSpeed(float newSpeed)
     {
         speed = newSpeed;
+    }
+
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
     }
 
     private void Update()
@@ -16,6 +24,20 @@ public class PeaBullet : MonoBehaviour
         transform.Translate(speed * Time.deltaTime * Vector3.right);
         if (transform.position.x > Camera.main.orthographicSize * Camera.main.aspect + 1f) // When not visible anymore
         {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Zombie"))
+        {
+            Zombie zombie = collision.GetComponent<Zombie>();
+            if (zombie != null)
+            {
+                zombie.TakeDamage(damage); 
+            }
+            Instantiate(peaBulletHitPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
