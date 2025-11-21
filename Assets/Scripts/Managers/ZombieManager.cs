@@ -27,7 +27,7 @@ public class ZombieManager : MonoBehaviour
 
     private void Start()
     {
-        StartSpawning();
+        GameManager.Instance.OnStartPlanting += StartSpawning;
     }
 
     public void StartSpawning()

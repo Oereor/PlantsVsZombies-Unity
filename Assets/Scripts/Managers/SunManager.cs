@@ -44,9 +44,7 @@ public class SunManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateSunAmountText();
-        CalculateSunIconPosition();
-        EnableAutoProduce();
+        GameManager.Instance.OnStartPlanting += OnPlantingStart;
     }
 
     private void Update()
@@ -55,6 +53,13 @@ public class SunManager : MonoBehaviour
         {
             AutoProduceSun();
         }
+    }
+
+    private void OnPlantingStart()
+    {
+        UpdateSunAmountText();
+        CalculateSunIconPosition();
+        EnableAutoProduce();
     }
 
     private void UpdateSunAmountText()

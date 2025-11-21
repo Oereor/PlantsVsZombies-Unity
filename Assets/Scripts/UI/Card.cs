@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 enum CardState
 {
+    Disabled,
     CoolingDown,
     NeedSun,
     Ready
@@ -23,7 +24,7 @@ public enum PlantType
 
 public class Card : MonoBehaviour
 {
-    private CardState currentState = CardState.CoolingDown;
+    private CardState currentState = CardState.Disabled;
 
     public PlantType plantType;
 
@@ -126,6 +127,19 @@ public class Card : MonoBehaviour
     private void OnPlantSuccess()
     {
         SunManager.Instance.ConsumeSun(sunCost);
+        SwitchToCoolingDown();
+    }
+
+    public void DisableCard()
+    {
+        currentState = CardState.Disabled;
+        cardLight.SetActive(false);
+        cardGrey.SetActive(true);
+        cardDarkMask.gameObject.SetActive(false);
+    }
+
+    public void EnableCard()
+    {
         SwitchToCoolingDown();
     }
 }
