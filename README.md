@@ -100,6 +100,6 @@ Currently there is only *one* kind of zombie: the most ordinary **ordinary zombi
 
 ## Coming Soon...
 
-- The peashooter has come. Working on zombie health system. After that may come Repeater and Gatlin Pea. 
+- Constructed zombie health system. Future features: two derived Peashooters, namely *Repeater* and *Gatlin Pea*; and two tougher zombies, namely *Conehead zombie* and *Buckethead zombie*. 
 
-- More game contents, such as level progress and level selector, as well as more kinds of zombies, will... Well, I don't know when they can be published. Maybe after a long time. 
+- More game contents, such as level progress and level selector, will... Well, I don't know when they can be published. Maybe after a long time. 
