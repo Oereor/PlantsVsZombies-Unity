@@ -3,7 +3,7 @@ A Unity version of PvZ. Still working on it!
 
 *Unity version: 2022.3*
 
-Here are some things I've already implemented. Currently there are 6 plants to use, as well as some unique features (part of which are inspired by PvZ 2). 
+Here are some things I've already implemented. Currently there are 7 plants to use, as well as some unique features (part of which are inspired by PvZ 2). 
 
 ## Unique Features
 
@@ -87,7 +87,19 @@ The most classic attacker. Now equipped with boost ability!
 - Sun payback on shoveled: 50
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
 - Damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
-- Boost effect: *Immediately shoot 40 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on*
+- Boost effect: *Immediately shoot 35 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on*
+
+### 7. Repeater
+
+Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more firepower! 
+
+- Sun cost: 200
+- Cooldown Time: 8 seconds
+- Max health: 100
+- Sun payback on shoveled: 100
+- Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
+- Damage: 10*2 **(unboosted)**; 12*2 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
+- Boost effect: *Immediately shoot 70 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on; upgrade appearance to Gatlin Pea*
 
 ## Zombies
 
