@@ -2091,7 +2091,10 @@ MonoBehaviour:
   - {fileID: 1792848003072785760}
   - {fileID: 1792848005048392855}
   - {fileID: 6256579007542247744}
-  zombiePrefab: {fileID: 3094332268541190668, guid: fe119042fce11264793cd6a00578fcd2, type: 3}
+  zombiePrefabs:
+  - {fileID: 3094332268541190668, guid: fe119042fce11264793cd6a00578fcd2, type: 3}
+  - {fileID: 8646769535145114671, guid: 0960f12dc2911734aba1ff28482e6501, type: 3}
+  - {fileID: 3388780768679335695, guid: ec1fc3088f2ce3c499cd3dccfa904e64, type: 3}
 --- !u!114 &477047529
 MonoBehaviour:
   m_ObjectHideFlags: 0

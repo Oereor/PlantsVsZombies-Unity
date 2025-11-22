@@ -14,7 +14,7 @@ public class ZombieManager : MonoBehaviour
     public static ZombieManager Instance { get; private set; }
 
     public Transform[] spawnPoints;
-    public GameObject zombiePrefab;
+    public GameObject[] zombiePrefabs;
 
     private SpawnState currentSpawnState = SpawnState.NotStarted;
 
@@ -59,8 +59,9 @@ public class ZombieManager : MonoBehaviour
 
     private void SpawnSingleZombie()
     {
+        int randomZombieTypeIndex = Random.Range(0, zombiePrefabs.Length);
         int rowIndex = Random.Range(0, spawnPoints.Length);
-        GameObject newZombie = Instantiate(zombiePrefab, spawnPoints[rowIndex].position, Quaternion.identity);
+        GameObject newZombie = Instantiate(zombiePrefabs[2], spawnPoints[rowIndex].position, Quaternion.identity);
         Zombie zombieComponent = newZombie.GetComponent<Zombie>();
         zombieComponent.RowIndex = rowIndex + 1;
         zombieComponent.OnZombieDie += RemoveDeadZombie;
