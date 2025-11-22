@@ -17,7 +17,7 @@ public class Zombie : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private readonly float moveSpeed = 1f;
+    private float moveSpeed = 1f;
     private readonly float attackDamage = 5f;
     private readonly float attackInterval = 0.2f;
     private float attackTimer = 0;
@@ -160,6 +160,11 @@ public class Zombie : MonoBehaviour
         maxHealth = maxHealthValue;
         health = maxHealth;
         UpdateHealthPercentage();
+    }
+
+    protected void SetSpeed(float speed)
+    {
+        moveSpeed = speed;
     }
 
     private void RandomlyDropSun()

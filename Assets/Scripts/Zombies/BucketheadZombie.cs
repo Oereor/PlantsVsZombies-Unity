@@ -8,5 +8,6 @@ public class BucketheadZombie : Zombie
     {
         AcquireComponents();
         SetMaxHealth(800f);
+        SetSpeed(1.2f);
     }
 }

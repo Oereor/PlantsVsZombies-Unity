@@ -59,13 +59,36 @@ public class ZombieManager : MonoBehaviour
 
     private void SpawnSingleZombie()
     {
-        int randomZombieTypeIndex = Random.Range(0, zombiePrefabs.Length);
         int rowIndex = Random.Range(0, spawnPoints.Length);
-        GameObject newZombie = Instantiate(zombiePrefabs[2], spawnPoints[rowIndex].position, Quaternion.identity);
+        GameObject newZombie = Instantiate(zombiePrefabs[GetRandomZombieType()], spawnPoints[rowIndex].position, Quaternion.identity);
         Zombie zombieComponent = newZombie.GetComponent<Zombie>();
         zombieComponent.RowIndex = rowIndex + 1;
         zombieComponent.OnZombieDie += RemoveDeadZombie;
         activeZombies.Add(zombieComponent);
+    }
+
+    /// <summary>
+    /// Selects a random zombie type identifier based on predefined probability distribution.
+    /// </summary>
+    /// <remarks>The probability distribution is weighted: Ordinary zombies are selected most frequently,
+    /// followed by Conehead and then Buckethead zombies. Use the returned value to determine which zombie type to spawn
+    /// or display.</remarks>
+    /// <returns>An integer representing the zombie type: 0 for Ordinary, 1 for Conehead, or 2 for Buckethead.</returns>
+    private int GetRandomZombieType()
+    {
+        int randomValue = Random.Range(0, 100);
+        if (randomValue < 60)
+        {
+            return 0; // Ordinary
+        }
+        else if (randomValue < 85)
+        {
+            return 1; // Conehead
+        }
+        else
+        {
+            return 2; // Buckethead
+        }
     }
 
     public Zombie[] GetZombiesInRow(int rowIndex)
