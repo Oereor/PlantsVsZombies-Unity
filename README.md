@@ -13,7 +13,7 @@ Usually the shovel recycles 50% of the sun cost, provided that the cost is no le
 
 ### 2. Boost the plants! 
 
-Well... In fact it's the cells that are boosted. Just click on the sun icon and you would get a *boost sun* (appears red), which you can place in any cell that is not currently boosted. The cost is 100 sun value per cell. The boost effect will apply once a plant is set in the cell (if there is already one, of course the boost takes effect immediately). **Each plant can only be boosted once. Boost effect is revoked if you shovel the plant, with no additional sun recycled.** By default, every plant restores full health when boosted. 
+Well... In fact it's the cells that are boosted. Just **click on the sun icon** (on the left-hand side of the card slot) and you would get a *boost sun* (appears red), which you can place in any cell that is not currently boosted. The cost is **100** sun value per cell. The boost effect will apply once a plant is set in the cell (if there is already one, of course the boost takes effect immediately). **Each plant can only be boosted once. Boost effect is revoked if you shovel the plant, with no additional sun recycled.** By default, every plant restores full health when boosted. 
 
 ### 3. Automatically collect sun! 
 
@@ -25,7 +25,7 @@ I'm lazy...in many aspects. First, the mechanism that allows manually clicking o
 
 The classic plant that produces sun for you. 
 
-- Sun cost: 50
+- Sun cost: **50**
 - Cooldown time: 4 seconds
 - Max health: 100
 - Sun payback on shoveled: 25
@@ -36,7 +36,7 @@ The classic plant that produces sun for you.
 
 Burns a whole row of zombies. Always reliable if a huge wave of zombies appear! 
 
-- Sun cost: 125
+- Sun cost: **125**
 - Cooldown time: 8 seconds
 - Max health: 2147483647 (all single-use plants are invicible when exploding, of course)
 - Sun payback on shoveled: 0
@@ -47,7 +47,7 @@ Burns a whole row of zombies. Always reliable if a huge wave of zombies appear!
 
 The best companion of Jalapeno! 
 
-- Sun cost: 150
+- Sun cost: **150**
 - Cooldown time: 8 seconds
 - Max health: 2147483647
 - Sun payback on shoveled: 0
@@ -58,7 +58,7 @@ The best companion of Jalapeno!
 
 They are really cheap! 
 
-- Sun cost: 25
+- Sun cost: **25**
 - Cooldown time: 7 seconds
 - Activation time: 10 seconds
 - Max health: 100 ...when not active; when active, why care about its health?
@@ -70,7 +70,7 @@ They are really cheap!
 
 The classic defender. Works best with a potato mine behind it! 
 
-- Sun cost: 50
+- Sun cost: **50**
 - Cooldown time: 12 seconds
 - Max health: 1500
 - Sun payback on shoveled: 25
@@ -81,8 +81,8 @@ The classic defender. Works best with a potato mine behind it!
 
 The most classic attacker. Now equipped with boost ability!
 
-- Sun cost: 100
-- Cooldown Time: 6 seconds
+- Sun cost: **100**
+- Cooldown time: 6 seconds
 - Max health: 100
 - Sun payback on shoveled: 50
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
@@ -93,8 +93,8 @@ The most classic attacker. Now equipped with boost ability!
 
 Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more firepower! 
 
-- Sun cost: 200
-- Cooldown Time: 8 seconds
+- Sun cost: **200**
+- Cooldown time: 8 seconds
 - Max health: 100
 - Sun payback on shoveled: 100
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
