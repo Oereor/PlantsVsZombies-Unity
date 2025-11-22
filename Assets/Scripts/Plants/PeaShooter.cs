@@ -6,16 +6,16 @@ public class PeaShooter : Plant
 {
     private static readonly WaitForSeconds m_waitForSeconds0_1 = new WaitForSeconds(0.1f);
 
-    [SerializeField] private float shootInterval;
+    private float shootInterval = 1.5f;
     private float shootTimer = 0;
 
     [SerializeField] private Transform peaSpawnPoint;
 
     [SerializeField] private PeaBullet peaBulletPrefab;
 
-    [SerializeField] private float bulletSpeed = 5f;
+    private float bulletSpeed = 5f;
 
-    [SerializeField] private float bulletDamage = 10f;
+    private float bulletDamage = 10f;
 
     private int singleShotQuantity = 1;
 
@@ -36,7 +36,7 @@ public class PeaShooter : Plant
     public override void Boost()
     {
         if (hasBoosted) return;
-        StartCoroutine(Shoot(bulletQuantity: 40));
+        StartCoroutine(Shoot(bulletQuantity: singleShotQuantity * 35));
         singleShotQuantity *= 2;
         shootInterval *= 0.8f;
         bulletDamage *= 1.2f;
@@ -54,5 +54,10 @@ public class PeaShooter : Plant
 
             yield return m_waitForSeconds0_1;
         }
+    }
+
+    protected void SetSingleShotBulletQuantity(int quantity)
+    {
+        singleShotQuantity = quantity;
     }
 }

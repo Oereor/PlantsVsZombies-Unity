@@ -19,7 +19,8 @@ public enum PlantType
     IceShroom,
     Wallnut,
     Sunflower,
-    PeaShooter
+    PeaShooter,
+    Repeater
 }
 
 public class Card : MonoBehaviour

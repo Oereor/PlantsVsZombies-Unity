@@ -152,7 +152,7 @@ public class Zombie : MonoBehaviour
 
     private void RandomlyDropSun()
     {
-        if (Random.Range(0, 100) < 10) // 10% chance to drop sun
+        if (Random.Range(0, 100) < 15) // 15% chance to drop sun
         {
             SunManager.Instance.ProduceSunAt(transform.position);
         }
