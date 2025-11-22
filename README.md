@@ -103,15 +103,24 @@ Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more fire
 
 ## Zombies
 
-Currently there is only *one* kind of zombie: the most ordinary **ordinary zombie.** Here are some basic info. 
+The three classic zombies are here! Take a look at these basic info. 
+
+- **All of them attack at a rate of 25 damage per second**; namely, a single zombie eat up a sunflower in 4 seconds. 
+
+### 1. Ordinary zombie
 
 - Max health: 100
-- Attack: 25 damage per second
-- Move speed: *ORDINARY* (I don't know how to describe this; to be technical, they move at a random speed of 0.9-1.3 units per second. This can be changed at any time.)
-- Are they resistent to any single-use plant? **NO.**
+
+### 2. Conehead zombie
+
+- Max health: 200; *The cone drops when his health is below 100*
+
+### 3. Buckethead zombie
+
+- Max health: 800; *The bucket drops when his health is below 100*
 
 ## Coming Soon...
 
-- Constructed zombie health system. Future features: two tougher zombies, namely *Conehead zombie* and *Buckethead zombie*. 
+- The classic plants and zombies have all been constructed. 
 
 - More game contents, such as level progress and level selector, will... Well, I don't know when they can be published. Maybe after a long time. 
