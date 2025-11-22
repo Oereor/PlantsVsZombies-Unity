@@ -86,8 +86,8 @@ The most classic attacker. Now equipped with boost ability!
 - Max health: 100
 - Sun payback on shoveled: 50
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
-- Damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
-- Boost effect: *Immediately shoot 35 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on*
+- Single bullet damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
+- Boost effect: *Immediately shoot 35 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2 peas at a time from then on*
 
 ### 7. Repeater
 
@@ -98,8 +98,8 @@ Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more fire
 - Max health: 100
 - Sun payback on shoveled: 100
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
-- Damage: 10*2 **(unboosted)**; 12*2 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
-- Boost effect: *Immediately shoot 70 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 2x peas at a time from then on; upgrade appearance to Gatlin Pea*
+- Single bullet damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
+- Boost effect: *Immediately shoot 70 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 4 peas at a time from then on; upgrade appearance to Gatlin Pea*
 
 ## Zombies
 
@@ -112,6 +112,6 @@ Currently there is only *one* kind of zombie: the most ordinary **ordinary zombi
 
 ## Coming Soon...
 
-- Constructed zombie health system. Future features: two derived Peashooters, namely *Repeater* and *Gatlin Pea*; and two tougher zombies, namely *Conehead zombie* and *Buckethead zombie*. 
+- Constructed zombie health system. Future features: two tougher zombies, namely *Conehead zombie* and *Buckethead zombie*. 
 
 - More game contents, such as level progress and level selector, will... Well, I don't know when they can be published. Maybe after a long time. 
