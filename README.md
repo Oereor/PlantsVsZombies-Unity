@@ -105,7 +105,8 @@ Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more fire
 
 The three classic zombies are here! Take a look at these basic info. 
 
-- **All of them attack at a rate of 25 damage per second**; namely, a single zombie eat up a sunflower in 4 seconds. 
+- **All of them attack at a rate of 25 damage per second**; namely, a single zombie eat up a sunflower in 4 seconds.
+- When spawning a zombie, the chances of an Ordinary zombie, Conehead zombie, and Buckethead zombie are 60%, 25%, and 15%, respectively. 
 
 ### 1. Ordinary zombie
 
@@ -118,6 +119,7 @@ The three classic zombies are here! Take a look at these basic info.
 ### 3. Buckethead zombie
 
 - Max health: 800; *The bucket drops when his health is below 100*
+- Move speed: 1.2x ordinary zombie's speed
 
 ## Coming Soon...
 
