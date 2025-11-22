@@ -121,6 +121,6 @@ The three classic zombies are here! Take a look at these basic info.
 
 ## Coming Soon...
 
-- The classic plants and zombies have all been constructed. 
+- The classic plants and zombies have all been constructed. Currently you will find nothing happen when a zombie enters your house. That's part of the coming features. 
 
 - More game contents, such as level progress and level selector, will... Well, I don't know when they can be published. Maybe after a long time. 
