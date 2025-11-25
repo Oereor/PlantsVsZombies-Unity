@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BoostSun : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class BoostSun : MonoBehaviour
     public void AttachToCell(Cell cell)
     {
         transform.position = cell.transform.position;
+        OnAttachedToCell?.Invoke();
     }
 
     public void Destruct()
     {
         Destroy(gameObject);
     }
+
+    public event UnityAction OnAttachedToCell;
 }

@@ -6,8 +6,6 @@ public class BucketheadZombie : Zombie
 {
     private void Start()
     {
-        AcquireComponents();
-        SetMaxHealth(800f);
-        SetSpeed(1.2f);
+        InitializeComponents();
     }
 }

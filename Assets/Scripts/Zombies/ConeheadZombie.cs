@@ -6,7 +6,6 @@ public class ConeheadZombie : Zombie
 {
     private void Start()
     {
-        AcquireComponents();
-        SetMaxHealth(200f);
+        InitializeComponents();
     }
 }

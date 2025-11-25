@@ -17,7 +17,8 @@ public class Zombie : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private float moveSpeed = 1f;
+    [SerializeField] private float baselineSpeed;
+    private float moveSpeed;
     private readonly float attackDamage = 5f;
     private readonly float attackInterval = 0.2f;
     private float attackTimer = 0;
@@ -29,7 +30,7 @@ public class Zombie : MonoBehaviour
     private Plant currentTargetPlant = null;
 
     private float health;
-    private float maxHealth = 100;
+    [SerializeField] private float maxHealth;
 
     private int rowIndex;
     public int RowIndex
@@ -45,13 +46,14 @@ public class Zombie : MonoBehaviour
 
     private void Start()
     {
-        AcquireComponents();
+        InitializeComponents();
     }
 
-    protected void AcquireComponents()
+    protected void InitializeComponents()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        SetSpeed(baselineSpeed + Random.Range(-0.1f, 0.3f));
     }
 
     private void Update()
@@ -73,8 +75,7 @@ public class Zombie : MonoBehaviour
 
     private void WalkingUpdate()
     {
-        float randomSpeed = Random.Range(-0.1f, 0.3f) + moveSpeed;
-        rb.MovePosition(rb.position + randomSpeed * Time.deltaTime * Vector2.left);
+        rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * Vector2.left);
     }
 
     private void AttakingUpdate()

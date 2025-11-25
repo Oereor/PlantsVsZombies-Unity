@@ -75,16 +75,17 @@ public class HandManager : MonoBehaviour
         shovelInHand = Instantiate(shovelPrefab);
     }
 
-    public void GrabOrDisposeBoostSun()
+    public BoostSun GrabOrDisposeBoostSun()
     {
         if (boostSunInHand != null)
         {
             boostSunInHand.Destruct();
             boostSunInHand = null;
-            return;
+            return null;
         }
 
         boostSunInHand = Instantiate(boostSunPrefab);
+        return boostSunInHand;
     }
 
     private Plant GetPlantPrefab(PlantType plantType)
