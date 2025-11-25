@@ -13,7 +13,7 @@ Usually the shovel recycles 50% of the sun cost, provided that the cost is no le
 
 ### 2. Boost the plants! 
 
-Well... In fact it's the cells that are boosted. Just **click on the sun icon** (on the left-hand side of the card slot) and you would get a *boost sun* (appears red), which you can place in any cell that is not currently boosted. The cost is **100** sun value per cell. The boost effect will apply once a plant is set in the cell (if there is already one, of course the boost takes effect immediately). **Each plant can only be boosted once. Boost effect is revoked if you shovel the plant, with no additional sun recycled.** By default, every plant restores full health when boosted. 
+Well... In fact it's the cells that are boosted. Just **click on the sun icon** (on the left-hand side of the card slot) and you would get a *boost sun* (appears red), which you can place in any cell that is not currently boosted. The cost is **100** sun value per cell, and there is a 5-second cooldown time before you can fetch another boost sun. The boost effect will apply once a plant is set in the cell (if there is already one, of course the boost takes effect immediately). **Each plant can only be boosted once. Boost effect is revoked if you shovel the plant, with no additional sun recycled.** By default, every plant restores full health when boosted. 
 
 ### 3. Automatically collect sun! 
 
