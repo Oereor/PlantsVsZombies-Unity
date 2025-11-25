@@ -13,7 +13,7 @@ public class PeaShooter : Plant
 
     [SerializeField] private PeaBullet peaBulletPrefab;
 
-    private float bulletSpeed = 5f;
+    private float bulletSpeed = 7.5f;
 
     private float bulletDamage = 10f;
 

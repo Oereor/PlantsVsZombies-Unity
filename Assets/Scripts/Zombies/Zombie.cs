@@ -53,7 +53,7 @@ public class Zombie : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        SetSpeed(baselineSpeed + Random.Range(-0.1f, 0.3f));
+        SetSpeed(baselineSpeed + Random.Range(-0.2f, 0.8f));
     }
 
     private void Update()
