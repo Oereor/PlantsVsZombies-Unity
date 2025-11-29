@@ -20,7 +20,8 @@ public enum PlantType
     Wallnut,
     Sunflower,
     PeaShooter,
-    Repeater
+    Repeater,
+    SnowPea
 }
 
 public class Card : MonoBehaviour

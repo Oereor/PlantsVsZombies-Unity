@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5049938418391632299
+--- !u!1 &52423499181061819
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,72 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1875689690165999860}
-  - component: {fileID: 4188359416317347276}
-  - component: {fileID: 8140632009778903876}
-  - component: {fileID: 6758735603926234453}
+  - component: {fileID: 5456158079984261950}
   m_Layer: 0
-  m_Name: SnowPeaBullet
+  m_Name: PeaSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1875689690165999860
+--- !u!4 &5456158079984261950
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049938418391632299}
+  m_GameObject: {fileID: 52423499181061819}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5933487, y: 0.14136344, z: 0}
+  m_LocalPosition: {x: 0.618, y: 0.307, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 7020055750225821846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &754298103708007960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7020055750225821846}
+  - component: {fileID: 8868943968184800264}
+  - component: {fileID: 2625386561078962561}
+  - component: {fileID: 465871711165747400}
+  - component: {fileID: 233028653075643796}
+  m_Layer: 0
+  m_Name: SnowPea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7020055750225821846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754298103708007960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.69, y: -0.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5456158079984261950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4188359416317347276
+--- !u!212 &8868943968184800264
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049938418391632299}
+  m_GameObject: {fileID: 754298103708007960}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,40 +105,48 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1951971287
-  m_SortingLayer: 3
-  m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: f42669e8ab06bbd4d87d395779a640d5, type: 3}
+  m_SortingLayerID: 853272153
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 1a9e8beef2bd42641bac7e2788ea854f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.93333334, y: 0.56666666}
+  m_Size: {x: 1.1833333, y: 1.1833333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8140632009778903876
-MonoBehaviour:
+--- !u!95 &2625386561078962561
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049938418391632299}
+  m_GameObject: {fileID: 754298103708007960}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9e1bc5c5b458e745bb4f34d65f81b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  peaBulletHitPrefab: {fileID: 8868712750889048936, guid: 12cd7b8d2025f7a48b94bc607c3888ff, type: 3}
---- !u!61 &6758735603926234453
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48cd2b76d74b72645821f81181b6907f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &465871711165747400
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049938418391632299}
+  m_GameObject: {fileID: 754298103708007960}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -131,16 +172,34 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18708038, y: 0.013362825}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.93333334, y: 0.56666666}
-    newSize: {x: 0.93333334, y: 0.56666666}
+    oldSize: {x: 1.1833333, y: 1.1833333}
+    newSize: {x: 1.1833333, y: 1.1833333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5057211, y: 0.48648942}
+  m_Size: {x: 1.1833333, y: 1.1833333}
   m_EdgeRadius: 0
+--- !u!114 &233028653075643796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754298103708007960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8561e49e7d5dcb4980a49867b6c01c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantType: 8
+  plantHealth: 100
+  maxHealth: 100
+  sunPaybackQuantity: 3
+  peaSpawnPoint: {fileID: 5456158079984261950}
+  peaBulletPrefab: {fileID: 8140632009778903876, guid: 91b3a5445c5232f43a62b7b350b83674, type: 3}

@@ -33,12 +33,17 @@ public class PeaBullet : MonoBehaviour
         if (collision.CompareTag("Zombie"))
         {
             Zombie zombie = collision.GetComponent<Zombie>();
-            if (zombie != null)
-            {
-                zombie.OnHitByPea(damage);
-            }
-            Instantiate(peaBulletHitPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            OnHitZombie(zombie);
         }
+    }
+
+    protected virtual void OnHitZombie(Zombie zombie)
+    {
+        if (zombie != null)
+        {
+            zombie.OnHitByPea(damage);
+        }
+        Instantiate(peaBulletHitPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

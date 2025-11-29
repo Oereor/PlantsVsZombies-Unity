@@ -18,10 +18,15 @@ public class Zombie : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private float baselineSpeed;
+    private float baseAttackDamage = 5f;
     private float moveSpeed;
-    private readonly float attackDamage = 5f;
+    private float attackDamage = 5f;
     private readonly float attackInterval = 0.2f;
     private float attackTimer = 0;
+
+    private float slowDownDuration = 3f;
+    private float slowDownTimer = 0f;
+    private bool isSlowedDown = false;
 
     private Animator animator;
 
@@ -71,6 +76,38 @@ public class Zombie : MonoBehaviour
             default:
                 break;
         }
+        if (isSlowedDown)
+        {
+            slowDownTimer += Time.deltaTime;
+            if (slowDownTimer >= slowDownDuration)
+            {
+                ExitSlowDownState();
+            }
+        }
+    }
+
+    public void SlowDown()
+    {
+        if (!isSlowedDown)
+        {
+            EnterSlowDownState();
+        }
+        slowDownTimer = 0f; // Reset timer if already slowed down
+    }
+
+    private void EnterSlowDownState()
+    {
+        isSlowedDown = true;
+        slowDownTimer = 0f;
+        SetSpeed(baselineSpeed * 0.75f);
+        attackDamage = baseAttackDamage * 0.75f;
+    }
+
+    private void ExitSlowDownState()
+    {
+        isSlowedDown = false;
+        SetSpeed(baselineSpeed);
+        attackDamage = baseAttackDamage;
     }
 
     private void WalkingUpdate()
