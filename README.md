@@ -3,7 +3,7 @@ A Unity version of PvZ. Still working on it!
 
 *Unity version: 2022.3*
 
-Here are some things I've already implemented. Currently there are 7 plants to use, as well as some unique features (part of which are inspired by PvZ 2). 
+Here are some things I've already implemented. Currently there are 8 plants to use, as well as some unique features (part of which are inspired by PvZ 2). 
 
 ## Unique Features
 
@@ -100,6 +100,15 @@ Want more firepower? Try Repeater! Boost to get a Gatlin Pea with even more fire
 - Shoot interval: 1.5 seconds; only shoot when there are zombies in the row
 - Single bullet damage: 10 **(unboosted)**; 12 **(boosted)**; *10 unboosted peas will kill an ordinary zombie*
 - Boost effect: *Immediately shoot 70 peas; 0.8x shoot interval (namely, to 1.2 seconds); 1.5x pea bullet speed; 1.2x single bullet damage; shoot 4 peas at a time from then on; upgrade appearance to Gatlin Pea*
+
+### 8. Snow Pea
+
+They can slow down zombies! 
+
+- Sun cost: **175**
+- Cooldown time: 8 seconds
+- Slow zombies by a factor = 0.75 (including move speed and damage)
+- Other features are the same as Pea Shooter
 
 ## Zombies
 
