@@ -35,7 +35,7 @@ public class PeaBullet : MonoBehaviour
             Zombie zombie = collision.GetComponent<Zombie>();
             if (zombie != null)
             {
-                zombie.TakeDamage(damage); 
+                zombie.OnHitByPea(damage);
             }
             Instantiate(peaBulletHitPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);

@@ -191,6 +191,11 @@ public class Zombie : MonoBehaviour
         }
     }
 
+    public void OnHitByPea(float damage)
+    {
+        TakeDamage(damage);
+    }
+
     private void UpdateHealthPercentage()
     {
         float healthPercentage = health / maxHealth;
