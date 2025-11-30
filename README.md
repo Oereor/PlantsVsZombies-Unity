@@ -37,7 +37,7 @@ The classic plant that produces sun for you.
 Burns a whole row of zombies. Always reliable if a huge wave of zombies appear! 
 
 - Sun cost: **125**
-- Cooldown time: 8 seconds
+- Cooldown time: 15 seconds
 - Max health: 2147483647 (all single-use plants are invicible when exploding, of course)
 - Sun payback on shoveled: 0
 - Damage: Burn zombies on the same row
@@ -48,7 +48,7 @@ Burns a whole row of zombies. Always reliable if a huge wave of zombies appear!
 The best companion of Jalapeno! 
 
 - Sun cost: **150**
-- Cooldown time: 8 seconds
+- Cooldown time: 15 seconds
 - Max health: 2147483647
 - Sun payback on shoveled: 0
 - Damage: Effective within a 3x3 square (approximately; the actual range is a circle)
