@@ -74,8 +74,8 @@ The classic defender. Works best with a potato mine behind it!
 - Cooldown time: 12 seconds
 - Max health: 1500
 - Sun payback on shoveled: 25
-- Boost effect: *2x Max health and immediately restore to full health (namely, 3000)*
-- Switch to damage stage 1 when health percentage is below 65%, and damage stage 2 when below 30%
+- Boost effect: *2x Max health and immediately restore to full health (namely, 3000)*; change appearance to a Tallnut
+- Switch to damage stage 1 when health percentage is below 65%, and damage stage 2 when below 30% (the same for Tallnut)
 
 ### 6. Peashooter
 
