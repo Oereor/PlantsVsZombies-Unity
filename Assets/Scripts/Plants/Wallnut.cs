@@ -36,6 +36,7 @@ public class Wallnut : Plant
 
         maxHealth *= 2;
         FullHeal();
+        animator.SetTrigger("Boosted");
         BoostComplete();
     }
 }

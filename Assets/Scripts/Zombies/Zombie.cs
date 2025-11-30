@@ -16,6 +16,7 @@ public class Zombie : MonoBehaviour
     private const string m_HealthPercentageParameterName = "HealthPercentage";
 
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
 
     [SerializeField] private float baselineSpeed;
     private float baseAttackDamage = 5f;
@@ -24,7 +25,7 @@ public class Zombie : MonoBehaviour
     private readonly float attackInterval = 0.2f;
     private float attackTimer = 0;
 
-    private float slowDownDuration = 3f;
+    private float slowDownDuration = 5f;
     private float slowDownTimer = 0f;
     private bool isSlowedDown = false;
 
@@ -56,6 +57,7 @@ public class Zombie : MonoBehaviour
 
     protected void InitializeComponents()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         SetSpeed(baselineSpeed + Random.Range(-0.2f, 0.8f));
@@ -97,6 +99,7 @@ public class Zombie : MonoBehaviour
 
     private void EnterSlowDownState()
     {
+        spriteRenderer.color = Color.cyan;
         isSlowedDown = true;
         slowDownTimer = 0f;
         SetSpeed(baselineSpeed * 0.75f);
@@ -105,6 +108,7 @@ public class Zombie : MonoBehaviour
 
     private void ExitSlowDownState()
     {
+        spriteRenderer.color = Color.white;
         isSlowedDown = false;
         SetSpeed(baselineSpeed);
         attackDamage = baseAttackDamage;
@@ -190,6 +194,7 @@ public class Zombie : MonoBehaviour
     public void OnZombieBooming()
     {
         RandomlyDropSun();
+        ExitSlowDownState();
         SwitchToDead();
     }
 
