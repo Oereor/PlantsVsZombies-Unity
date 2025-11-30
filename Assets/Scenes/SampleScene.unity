@@ -2722,7 +2722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8280010992550771798, guid: 16e699c24577c7e408ab3352b450f373, type: 3}
       propertyPath: coolDownTime
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8316026745060801672, guid: 16e699c24577c7e408ab3352b450f373, type: 3}
       propertyPath: m_Sprite
@@ -4922,7 +4922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8280010992550771798, guid: 16e699c24577c7e408ab3352b450f373, type: 3}
       propertyPath: coolDownTime
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8316026745060801672, guid: 16e699c24577c7e408ab3352b450f373, type: 3}
       propertyPath: m_Sprite
