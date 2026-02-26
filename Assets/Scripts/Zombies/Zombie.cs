@@ -13,7 +13,7 @@ enum ZombieState
 
 public class Zombie : MonoBehaviour
 {
-    private const string m_HealthPercentageParameterName = "HealthPercentage";
+    private const string HealthPercentageString = "HealthPercentage";
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -241,7 +241,7 @@ public class Zombie : MonoBehaviour
     private void UpdateHealthPercentage()
     {
         float healthPercentage = health / maxHealth;
-        animator.SetFloat(m_HealthPercentageParameterName, healthPercentage);
+        animator.SetFloat(HealthPercentageString, healthPercentage);
     }
 
     public event UnityAction<Zombie> OnZombieDie;

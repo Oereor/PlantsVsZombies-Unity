@@ -6,7 +6,7 @@ public class Wallnut : Plant
 {
     private Animator animator;
 
-    private const string m_HealthPercentageParameterString = "HealthPercentage";
+    private const string HealthPercentageString = "HealthPercentage";
 
     private void Awake()
     {
@@ -15,19 +15,19 @@ public class Wallnut : Plant
 
     private void Start()
     {
-        animator.SetFloat(m_HealthPercentageParameterString, 1f);
+        animator.SetFloat(HealthPercentageString, 1f);
     }
 
     public override void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
-        animator.SetFloat(m_HealthPercentageParameterString, GetHealthPercentage());
+        animator.SetFloat(HealthPercentageString, GetHealthPercentage());
     }
 
     public override void Heal(float healAmount)
     {
         base.Heal(healAmount);
-        animator.SetFloat(m_HealthPercentageParameterString, GetHealthPercentage());
+        animator.SetFloat(HealthPercentageString, GetHealthPercentage());
     }
 
     public override void Boost()

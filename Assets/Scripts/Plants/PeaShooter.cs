@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PeaShooter : Plant
 {
-    private static readonly WaitForSeconds m_waitForSeconds0_1 = new WaitForSeconds(0.1f);
+    private static readonly WaitForSeconds WaitForSeconds0_1 = new WaitForSeconds(0.1f);
 
     private float shootInterval = 1.5f;
     private float shootTimer = 0;
@@ -52,7 +52,7 @@ public class PeaShooter : Plant
             peaBullet.SetSpeed(bulletSpeed);
             peaBullet.SetDamage(bulletDamage);
 
-            yield return m_waitForSeconds0_1;
+            yield return WaitForSeconds0_1;
         }
     }
 
